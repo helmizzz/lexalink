@@ -1,59 +1,122 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <img src="public/img/logolexa.png" alt="LexaLink Logo" width="150" />
+  
+  # LexaLink 🏛️✨
+  **Platform Riset Hukum Berbasis AI & Manajemen Kepatuhan Terpadu**
+  
+  [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+  [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+  [![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)](https://mariadb.org/)
+</div>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<br>
 
-## About Laravel
+## 🚀 Tentang LexaLink
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**LexaLink** adalah aplikasi inovatif (_AI Legal Intelligence Platform_) yang dirancang khusus untuk memodernisasi ekosistem hukum, perizinan bisnis, dan kepatuhan korporasi di Indonesia. Platform ini memberikan akses secara _real-time_ ke jutaan dokumen putusan pengadilan dan peraturan perundang-undangan dengan fitur analitik cerdas.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Sebagai pusat dari sebuah **Ecosystem**, LexaLink juga terintegrasi dengan **Perizinankami.id** dan **Salman & Co.** untuk menyediakan solusi layanan satu atap (One-Stop Legal Solution) mulai dari riset, konsultasi, hingga pengurusan legalitas bisnis.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🌟 Fitur Utama (Core Features)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- 🔍 **Database Peraturan & Putusan:** Pencarian cerdas untuk undang-undang dan putusan pengadilan.
+- 🤖 **AI-Driven Insight:** Analisis presisi tinggi berbekal kecerdasan buatan untuk mengulas risiko hukum dan _document review_.
+- 🏢 **Kepatuhan & Regulasi Terpadu:** Sistem pemantauan kepatuhan untuk individu dan korporasi.
+- 📝 **Legal Drafting & Academy:** Alat pendukung penyusunan dokumen hukum serta event & akademi pelatihan hukum.
+- 👥 **Multi-role Dashboard:** Panel manajemen terpisah untuk peran **Admin** dan **Client**.
+- 🌓 **Desain Premium UI/UX:** Tampilan eksklusif dengan dukungan fitur _Dark Mode_ dan interaksi _micro-animation_ yang elegan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 💻 Tech Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Backend:** Laravel 11.x / PHP 8.2+
+- **Frontend:** Blade Templating, Tailwind CSS (Custom Design System), Alpine.js / Vanilla JS
+- **Database:** MariaDB / MySQL (or SQLite for light environments)
+- **Deployment:** Docker (menggunakan image `serversideup/php:8.2-fpm-nginx`), CasaOS compatible.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🛠️ Panduan Instalasi (Development)
 
-## Contributing
+Pastikan komputer Anda sudah terinstal **PHP 8.2+**, **Composer**, dan **Node.js/NPM**.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. **Clone repository ini**
+    ```bash
+    git clone https://github.com/username/lexalink.git
+    cd lexalink
+    ```
+2. **Install Dependensi Backend & Frontend**
+    ```bash
+    composer install
+    npm install && npm run build
+    ```
+3. **Konfigurasi Environment**
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+    _(Jangan lupa sesuaikan koneksi database Anda di file `.env`)_
+4. **Migrasi Database & Seeding**
+    ```bash
+    php artisan migrate --seed
+    ```
+5. **Jalankan Aplikasi**
+    ```bash
+    php artisan serve
+    ```
+    Akses di browser melalui: `http://localhost:8000`
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🐳 Panduan Deploy via Docker (Production / CasaOS)
 
-## Security Vulnerabilities
+LexaLink sudah dikonfigurasi agar 100% _Docker-ready_ dengan optimasi standar _production_ dari ServerSideUp.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. **Ubah Konfigurasi di `.env`**
+    ```env
+    APP_ENV=production
+    APP_DEBUG=false
+    DB_CONNECTION=mysql
+    DB_HOST=db
+    ```
+2. **Jalankan Docker Compose**
+    ```bash
+    docker compose up -d
+    ```
+3. Aplikasi siap diakses di `http://<IP_SERVER_ANDA>:8000`
 
-## License
+> 💡 **Info CasaOS:** Jika Anda men-deploy melalui UI Import CasaOS dan terkendala dukungan _multi-container_, ubah konfigurasi `.env` Anda ke `DB_CONNECTION=sqlite`, dan Anda bisa mem-paste container `app` langsung ke form Import CasaOS.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 📸 Tampilan (Screenshots)
+
+**(Anda dapat menaruh screenshot antarmuka aplikasi di sini)**
+
+<details>
+  <summary><b>Klik untuk melihat Screenshot</b></summary>
+  
+  - *Beranda & Navigasi Utama*
+  - *Halaman Ecosystem (Grid Card Layout)*
+  - *Dashboard Admin & Klien*
+  - *Pencarian AI*
+  
+</details>
+
+---
+
+## 🛡️ Keamanan & Kepatuhan
+
+Infrastruktur dibangun dengan mematuhi standar keamanan akses data terpusat, pengamanan enkripsi sandi via Laravel Hash, dan _middleware_ otentikasi peran yang ketat untuk memastikan **Keamanan Data Terjamin 100%**.
+
+---
+
+<div align="center">
+  Dibuat dengan ❤️ oleh <b>benerindisini</b><br>
+  © 2026 LexaLink. All rights reserved.
+</div>
