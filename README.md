@@ -96,8 +96,6 @@ LexaLink sudah dikonfigurasi agar 100% _Docker-ready_ dengan optimasi standar _p
 
 ## 📸 Tampilan (Screenshots)
 
-**(Anda dapat menaruh screenshot antarmuka aplikasi di sini)**
-
 <details>
   <summary><b>Klik untuk melihat Screenshot</b></summary>
   
