@@ -1,0 +1,38 @@
+name: lexalink
+services:
+  app:
+    # PERUBAHAN ADA DI BARIS INI:
+    image: serversideup/php:8.2-fpm-nginx
+    container_name: lexalink_app
+    ports:
+      - "8000:8080" # Akses dari IP_LXC:8000
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=lexalink
+      - DB_USERNAME=lexalink_user
+      - DB_PASSWORD=lexalink_password
+      - AUTORUN_LARAVEL_MIGRATION=true 
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: mariadb:10.11
+    container_name: lexalink_db
+    environment:
+      - MYSQL_DATABASE=lexalink
+      - MYSQL_USER=lexalink_user
+      - MYSQL_PASSWORD=lexalink_password
+      - MYSQL_ROOT_PASSWORD=rahasia_root_password
+    volumes:
+      - lexalink_db_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  lexalink_db_data:
